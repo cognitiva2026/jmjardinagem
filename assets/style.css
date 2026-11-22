@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  --forest: #152b21;
+  --ink: #20362b;
+  --paper: #f7f6ee;
+  --lime: #dcf09c;
+  --line: #ccd3c0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.wrap { width: min(1120px, calc(100% - 3rem)); margin-inline: auto; }
+.header, footer { background: var(--forest); color: var(--paper); }
+.bar, nav { display: flex; align-items: center; gap: 1.5rem; }
+.bar { justify-content: space-between; min-height: 76px; }
+a { color: inherit; text-underline-offset: .25em; }
+nav a, .brand, .button { text-decoration: none; }
+.brand { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .6rem; font: bold 1.75rem Georgia, serif; color: var(--lime); }
+.brand span { font: 600 1rem Arial, sans-serif; color: var(--paper); }
+.nav-cta { border: 1px solid #8f9d84; padding: .65rem 1rem; border-radius: 100px; }
+.hero {
+  display: grid;
+  align-items: center;
+  min-height: clamp(480px, 76svh, 730px);
+  background: linear-gradient(90deg, rgba(10, 28, 19, .95), rgba(10, 28, 19, .57) 53%, rgba(10, 28, 19, .1)), url("jardim.webp") center / cover, var(--forest);
+  color: var(--paper);
+}
+.hero-inner { padding-block: 4rem; }
+h1, h2, h3 { font-family: Georgia, serif; font-weight: 400; margin: 0; }
+h1 { font-size: clamp(3.7rem, 9vw, 7.5rem); line-height: .91; letter-spacing: -.065em; }
+h1 em { color: var(--lime); }
+h2 { font-size: clamp(2.45rem, 5.5vw, 4.4rem); line-height: 1; letter-spacing: -.048em; }
+h3 { font-size: 1.6rem; line-height: 1.1; }
+p { line-height: 1.6; }
+.hero p { max-width: 29rem; margin: 1.6rem 0 2rem; font-size: 1.15rem; }
+.button {
+  display: inline-block;
+  background: var(--lime);
+  color: var(--forest);
+  border: 0;
+  border-radius: 100px;
+  padding: .9rem 1.4rem;
+  font: 700 1rem Arial, sans-serif;
+  cursor: pointer;
+}
+.button:hover { background: #f0facb; }
+:focus-visible { outline: 3px solid #a8782b; outline-offset: 4px; }
+.services, .quote { padding-block: clamp(3.5rem, 8vw, 7rem); }
+.section-intro, .quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.section-intro { align-items: end; margin-bottom: 2.6rem; }
+.section-intro p, .quote p { max-width: 29rem; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.cards article { display: flex; flex-direction: column; align-items: start; padding: 1.6rem; border-top: 2px solid #657b57; background: #edf0e4; }
+.cards a { margin-top: auto; font-weight: bold; }
+.quote { background: #e4ead8; }
+form { max-width: 34rem; width: 100%; }
+label { display: block; margin-bottom: .4rem; font-weight: 700; }
+input, textarea, select { width: 100%; margin-bottom: 1rem; border: 1px solid #829075; padding: .75rem; background: var(--paper); color: var(--ink); border-radius: .4rem; font: inherit; }
+textarea { resize: vertical; }
+#result { margin-top: 1.25rem; }
+#status:empty { margin: 0; }
+@media (max-width: 720px) {
+  .section-intro, .quote-grid, .cards { grid-template-columns: 1fr; gap: 1.2rem; }
+  .hero { background-position: 57% center; }
+}
+@media (max-width: 390px) {
+  .wrap { width: calc(100% - 2rem); }
+  nav, .bar { gap: .7rem; }
+  .nav-cta { padding-inline: .6rem; }
+}

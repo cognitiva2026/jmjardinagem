@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152b21">
+  <meta name="description" content="Conheça os serviços de implantação, manutenção e renovação de jardins da JM Jardinagem e prepare seu pedido de orçamento.">
+  <title>JM Jardinagem | Jardins para viver</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap bar">
+      <a href="#" class="brand">JM<span>Jardinagem</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a class="nav-cta" href="#orcamento">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="titulo">
+      <div class="wrap hero-inner">
+        <h1 id="titulo">Jardins feitos<br>para <em>viver.</em></h1>
+        <p>Criação, renovação e cuidado de jardins para aproveitar mais o verde no dia a dia.</p>
+        <a class="button" href="#orcamento">Pedir orçamento</a>
+      </div>
+    </section>
+    <section class="wrap services" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="section-intro">
+        <h2 id="servicos-titulo">O cuidado que seu<br>espaço precisa</h2>
+        <p>Do primeiro plantio à manutenção de rotina, encontre o serviço certo para o seu jardim.</p>
+      </div>
+      <div class="cards">
+        <article>
+          <h3>Implantação de jardins</h3>
+          <p>Planejamento e plantio com espécies escolhidas conforme a luz, o espaço e sua rotina de cuidados.</p>
+          <a href="#orcamento" data-service="Implantação de jardins">Orçar implantação</a>
+        </article>
+        <article>
+          <h3>Manutenção</h3>
+          <p>Poda, corte de grama e limpeza de canteiros para manter seu jardim bem cuidado ao longo do ano.</p>
+          <a href="#orcamento" data-service="Manutenção">Orçar manutenção</a>
+        </article>
+        <article>
+          <h3>Renovação de jardins</h3>
+          <p>Reorganização de canteiros e reposição de plantas para recuperar áreas desgastadas do jardim.</p>
+          <a href="#orcamento" data-service="Renovação de jardins">Orçar renovação</a>
+        </article>
+      </div>
+    </section>
+    <section class="quote" id="orcamento" aria-labelledby="orcamento-titulo">
+      <div class="wrap quote-grid">
+        <div>
+          <h2 id="orcamento-titulo">Conte sobre<br>seu jardim</h2>
+          <p>Escolha o serviço e descreva o espaço. Se souber, inclua a área aproximada e a frequência desejada.</p>
+        </div>
+        <form id="quote-form">
+          <label for="service">Serviço</label>
+          <select id="service" required>
+            <option value="">Selecione um serviço</option>
+            <option>Implantação de jardins</option>
+            <option>Manutenção</option>
+            <option>Renovação de jardins</option>
+            <option>Preciso de orientação</option>
+          </select>
+          <label for="location">Cidade ou bairro</label>
+          <input id="location" required maxlength="120" autocomplete="address-level2">
+          <label for="details">O que você precisa?</label>
+          <textarea id="details" rows="4" required maxlength="1000"></textarea>
+          <button class="button" type="submit">Preparar pedido</button>
+          <div id="result" hidden>
+            <label for="message">Seu pedido está pronto para copiar</label>
+            <textarea id="message" rows="5" readonly></textarea>
+            <button class="button" type="button" id="copy">Copiar pedido</button>
+          </div>
+          <p id="status" role="status"></p>
+          <noscript>Ative o JavaScript para preparar o pedido.</noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap bar"><a href="#" class="brand">JM<span>Jardinagem</span></a><a href="#titulo">Voltar ao topo</a></div></footer>
+</body>
+</html>
