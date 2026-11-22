@@ -3,84 +3,132 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#152b21">
-  <meta name="description" content="Conheça os serviços de implantação, manutenção e renovação de jardins da JM Jardinagem e prepare seu pedido de orçamento.">
-  <title>JM Jardinagem | Jardins para viver</title>
+  <meta name="theme-color" content="#123C29">
+  <meta name="description" content="Jardinagem e manutenção de áreas verdes com a RM Jardinagem. Solicite um orçamento personalizado pelo WhatsApp.">
+  <title>RM Jardinagem | Jardinagem e manutenção de áreas verdes</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="preload" href="assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
   <script src="assets/main.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
   <header class="header">
-    <div class="wrap bar">
-      <a href="#" class="brand">JM<span>Jardinagem</span></a>
-      <nav aria-label="Navegação principal">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="RM Jardinagem, início">
+        <svg aria-hidden="true"><use href="assets/icons.svg#leaf"/></svg><span><strong>RM</strong><span>JARDINAGEM</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" hidden>Menu <span aria-hidden="true"></span></button>
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
-        <a class="nav-cta" href="#orcamento">Orçamento</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#trabalho">Nosso trabalho</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
       </nav>
+      <a class="button header-cta" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem.">Solicitar orçamento</a>
     </div>
   </header>
-  <main>
-    <section class="hero" aria-labelledby="titulo">
-      <div class="wrap hero-inner">
-        <h1 id="titulo">Jardins feitos<br>para <em>viver.</em></h1>
-        <p>Criação, renovação e cuidado de jardins para aproveitar mais o verde no dia a dia.</p>
-        <a class="button" href="#orcamento">Pedir orçamento</a>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <img class="hero-image" src="assets/gramado.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      <div class="wrap hero-content">
+        <p class="eyebrow">Cuidado profissional com seu espaço verde</p>
+        <h1 id="titulo">Transformamos seu jardim em um espaço que dá <em>orgulho de admirar.</em></h1>
+        <p class="hero-copy">Tenha um jardim bonito, saudável e bem cuidado sem precisar se preocupar com a manutenção. Conte com a RM Jardinagem para transformar e preservar suas áreas verdes.</p>
+        <a class="button primary" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem."><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>Quero fazer um orçamento agora!</a>
+        <p class="hero-note">Atendimento personalizado <span aria-hidden="true">•</span> Orçamento pelo WhatsApp</p>
       </div>
+      <a class="scroll-cue" href="#sobre" aria-label="Continue para a seção Sobre nós"><span></span></a>
     </section>
-    <section class="wrap services" id="servicos" aria-labelledby="servicos-titulo">
-      <div class="section-intro">
-        <h2 id="servicos-titulo">O cuidado que seu<br>espaço precisa</h2>
-        <p>Do primeiro plantio à manutenção de rotina, encontre o serviço certo para o seu jardim.</p>
-      </div>
-      <div class="cards">
-        <article>
-          <h3>Implantação de jardins</h3>
-          <p>Planejamento e plantio com espécies escolhidas conforme a luz, o espaço e sua rotina de cuidados.</p>
-          <a href="#orcamento" data-service="Implantação de jardins">Orçar implantação</a>
-        </article>
-        <article>
-          <h3>Manutenção</h3>
-          <p>Poda, corte de grama e limpeza de canteiros para manter seu jardim bem cuidado ao longo do ano.</p>
-          <a href="#orcamento" data-service="Manutenção">Orçar manutenção</a>
-        </article>
-        <article>
-          <h3>Renovação de jardins</h3>
-          <p>Reorganização de canteiros e reposição de plantas para recuperar áreas desgastadas do jardim.</p>
-          <a href="#orcamento" data-service="Renovação de jardins">Orçar renovação</a>
-        </article>
-      </div>
-    </section>
-    <section class="quote" id="orcamento" aria-labelledby="orcamento-titulo">
-      <div class="wrap quote-grid">
-        <div>
-          <h2 id="orcamento-titulo">Conte sobre<br>seu jardim</h2>
-          <p>Escolha o serviço e descreva o espaço. Se souber, inclua a área aproximada e a frequência desejada.</p>
+
+    <section class="section problem" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="wrap split">
+        <figure class="photo portrait" data-reveal><img src="assets/cuidado.webp" alt="Ilustração de um jardineiro cuidando de um canteiro ornamental" width="900" height="1350" loading="lazy"></figure>
+        <div class="editorial" data-reveal>
+          <p class="eyebrow">Sobre a RM Jardinagem</p>
+          <h2 id="sobre-titulo">O jardim pede cuidado. <em>Seu tempo também.</em></h2>
+          <p>A grama cresce, a poda fica para depois e os canteiros perdem o desenho. Entre os compromissos da semana, é fácil adiar o cuidado com o jardim.</p>
+          <p>A RM Jardinagem ajuda a retomar esse cuidado. Conversamos sobre como você usa o espaço, o que já está plantado e a manutenção que faz sentido para a sua rotina.</p>
+          <a class="text-link" href="#servicos">Conheça os serviços</a>
         </div>
-        <form id="quote-form">
-          <label for="service">Serviço</label>
-          <select id="service" required>
-            <option value="">Selecione um serviço</option>
-            <option>Implantação de jardins</option>
-            <option>Manutenção</option>
-            <option>Renovação de jardins</option>
-            <option>Preciso de orientação</option>
-          </select>
-          <label for="location">Cidade ou bairro</label>
-          <input id="location" required maxlength="120" autocomplete="address-level2">
-          <label for="details">O que você precisa?</label>
-          <textarea id="details" rows="4" required maxlength="1000"></textarea>
-          <button class="button" type="submit">Preparar pedido</button>
-          <div id="result" hidden>
-            <label for="message">Seu pedido está pronto para copiar</label>
-            <textarea id="message" rows="5" readonly></textarea>
-            <button class="button" type="button" id="copy">Copiar pedido</button>
-          </div>
-          <p id="status" role="status"></p>
-          <noscript>Ative o JavaScript para preparar o pedido.</noscript>
-        </form>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="wrap">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Serviços</p><h2 id="servicos-titulo">Cuidado em cada <em>etapa.</em></h2></div>
+          <p>Para manter o que já está bonito, recuperar um jardim que perdeu a forma ou começar um espaço verde do zero.</p>
+        </div>
+        <div class="cards">
+          <article data-reveal>
+            <svg aria-hidden="true"><use href="assets/icons.svg#prune"/></svg>
+            <h3>Manutenção de jardins</h3>
+            <p>Corte de grama, poda e limpeza de canteiros conforme as necessidades do seu espaço.</p>
+            <a class="text-link" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem.">Orçar manutenção</a>
+          </article>
+          <article data-reveal>
+            <svg aria-hidden="true"><use href="assets/icons.svg#sprout"/></svg>
+            <h3>Implantação de jardins</h3>
+            <p>Planejamento do plantio considerando a incidência de sol, o espaço e a rotina de cuidados.</p>
+            <a class="text-link" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem.">Orçar implantação</a>
+          </article>
+          <article data-reveal>
+            <svg aria-hidden="true"><use href="assets/icons.svg#leaf"/></svg>
+            <h3>Renovação de áreas verdes</h3>
+            <p>Reorganização de canteiros e reposição de plantas para recuperar áreas que perderam o vigor.</p>
+            <a class="text-link" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem.">Orçar renovação</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="trabalho" aria-labelledby="trabalho-titulo">
+      <div class="wrap work-grid">
+        <div data-reveal>
+          <p class="eyebrow">Nosso trabalho</p>
+          <h2 id="trabalho-titulo">Do canteiro ao <em>gramado.</em></h2>
+          <p>O cuidado começa observando o espaço. Canteiros bem definidos deixam a passagem livre, a poda ajuda a manter a forma das plantas e o corte regular muda o aspecto do gramado.</p>
+          <a class="text-link" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem.">Conversar sobre meu jardim</a>
+        </div>
+        <figure data-reveal>
+          <div class="photo landscape"><img src="assets/jardim.webp" alt="Caminho de pedras entre canteiros de um jardim residencial" width="1536" height="1024" loading="lazy"></div>
+          <figcaption>Imagem ilustrativa de um jardim residencial.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section questions" aria-labelledby="faq-titulo">
+      <div class="wrap split">
+        <div data-reveal><p class="eyebrow">Perguntas frequentes</p><h2 id="faq-titulo">Antes de pedir <em>seu orçamento.</em></h2></div>
+        <div class="faq" data-reveal>
+          <details><summary>O que devo informar pelo WhatsApp?</summary><div class="answer"><p>Conte em que cidade ou bairro fica o jardim e o que precisa ser feito. Se puder, envie fotos e a área aproximada.</p></div></details>
+          <details><summary>O orçamento inclui manutenção recorrente?</summary><div class="answer"><p>Informe se você precisa de um atendimento pontual ou periódico. A frequência pode ser combinada durante o orçamento.</p></div></details>
+          <details><summary>Como confirmo se a RM atende meu bairro?</summary><div class="answer"><p>Informe sua localização pelo WhatsApp para consultar a disponibilidade de atendimento.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
+      <div class="wrap" data-reveal><h2 id="avaliacoes-titulo">Avaliações</h2><p>Os depoimentos de clientes serão publicados aqui quando estiverem disponíveis.</p></div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contato-titulo">
+      <div class="wrap" data-reveal>
+        <p class="eyebrow">Contato</p>
+        <h2 id="contato-titulo">Vamos conversar sobre <em>seu jardim?</em></h2>
+        <p>Conte o que você precisa e solicite um orçamento pelo WhatsApp.</p>
+        <a class="button primary" href="https://wa.me/5561994283830?text=Ol%C3%A1%21%20Encontrei%20a%20RM%20Jardinagem%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem."><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>Solicitar orçamento</a>
+        <p class="phone">(61) 99428-3830</p>
       </div>
     </section>
   </main>
-  <footer><div class="wrap bar"><a href="#" class="brand">JM<span>Jardinagem</span></a><a href="#titulo">Voltar ao topo</a></div></footer>
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="#inicio" aria-label="RM Jardinagem, início"><svg aria-hidden="true"><use href="assets/icons.svg#leaf"/></svg><span><strong>RM</strong><span>JARDINAGEM</span></span></a>
+      <a class="text-link" href="#inicio">Voltar ao início</a>
+    </div>
+  </footer>
 </body>
 </html>

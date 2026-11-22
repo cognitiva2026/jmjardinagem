@@ -1,11 +1,11 @@
-# JM Jardinagem
+# RM Jardinagem
 
-Página de vendas em português para serviços de jardinagem.
+Landing page em português do Brasil para serviços de jardinagem e manutenção de áreas verdes.
 
 ## Visualização local
 
-Na raiz do repositório, execute `python3 -m http.server 8000` e acesse http://localhost:8000.
+Execute `python3 -m http.server 8000` na raiz do repositório e acesse http://localhost:8000. A página é estática e dispensa instalação e compilação.
 
-## Orçamentos
+## Conteúdo
 
-O formulário prepara uma mensagem para copiar. Os dados ficam no navegador. Para receber pedidos diretamente, configure um canal comercial e adicione o respectivo link ou integração.
+Os links de orçamento abrem o WhatsApp da RM Jardinagem com a mensagem inicial preenchida. O visitante confirma o envio no WhatsApp. As imagens de jardim e de atendimento são ilustrativas. A seção de avaliações está pronta para receber depoimentos autorizados de clientes.
